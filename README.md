@@ -17,3 +17,4 @@ You can step through the commits to see what steps I've taken, with a brief over
 
 1. Generate iOS App project with Xcode
 2. Generate swift package for Dependencies
+3. Create dummy source file for Dependencies
