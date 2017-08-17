@@ -21,4 +21,5 @@ You can step through the commits to see what steps I've taken, with a brief over
 4. Override build settings in generated xcodeproj
 5. Add Dependencies.xcodeproj as subproject of the App xcodeproj
 6. Add a dependency (to RxSwift in this example) in Package.swift
+7. Link our App with the new Rx*.frameworks
 
