@@ -23,4 +23,5 @@ You can step through the commits to see what steps I've taken, with a brief over
 6. Add a dependency (to RxSwift in this example) in Package.swift
 7. Link our App with the new Rx*.frameworks
 8. Write some sample code to verify that the import works
+9. Override MODULEMAP_FILE setting for non-Swift modules
 
