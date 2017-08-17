@@ -16,3 +16,4 @@ You can step through the commits to see what steps I've taken, with a brief over
 ## Process
 
 1. Generate iOS App project with Xcode
+2. Generate swift package for Dependencies
