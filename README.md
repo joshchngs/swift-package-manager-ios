@@ -19,4 +19,5 @@ You can step through the commits to see what steps I've taken, with a brief over
 2. Generate swift package for Dependencies
 3. Create dummy source file for Dependencies
 4. Override build settings in generated xcodeproj
+5. Add Dependencies.xcodeproj as subproject of the App xcodeproj
 
