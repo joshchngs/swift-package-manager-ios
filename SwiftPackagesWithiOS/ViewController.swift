@@ -8,11 +8,22 @@
 
 import UIKit
 
+import RxSwift
+import RxCocoa
+
 class ViewController: UIViewController {
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var progressView: UIProgressView!
+
+    let bag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        slider.rx.value
+            .bind(to: progressView.rx.progress)
+            .disposed(by: bag)
     }
 
     override func didReceiveMemoryWarning() {
