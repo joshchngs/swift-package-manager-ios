@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        print(SomeStruct.self)
         slider.rx.value
             .bind(to: progressView.rx.progress)
             .disposed(by: bag)
