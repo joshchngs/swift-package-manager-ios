@@ -27,6 +27,15 @@
           "revision": "80de9622b9bd1dca409b0e66e3ccc418676e571e",
           "version": "3.6.1"
         }
+      },
+      {
+        "package": "i3s",
+        "repositoryURL": "https://github.com/mwsrp/i3s-swift-package.git",
+        "state": {
+          "branch": null,
+          "revision": "44e29019ca18a1e7e73e972649d6b67b90a54e73",
+          "version": "1.3.0"
+        }
       }
     ]
   },

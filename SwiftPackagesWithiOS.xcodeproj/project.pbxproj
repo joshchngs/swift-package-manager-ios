@@ -13,11 +13,13 @@
 		03035A0D1F458E8B00961E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03035A0C1F458E8B00961E46 /* Assets.xcassets */; };
 		03035A101F458E8B00961E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03035A0E1F458E8B00961E46 /* LaunchScreen.storyboard */; };
 		034338341F45CCD200782A2F /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0343382F1F45CCD200782A2F /* RxBlocking.framework */; };
-		034338351F45CCD200782A2F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0343382D1F45CCD200782A2F /* RxCocoa.framework */; };
 		034338361F45CCD200782A2F /* RxCocoaRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034338311F45CCD200782A2F /* RxCocoaRuntime.framework */; };
 		034338371F45CCD200782A2F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034338331F45CCD200782A2F /* RxSwift.framework */; };
 		354BAD5B1F8A72BB003A301A /* MySwift4Package.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354BAD5A1F8A72BB003A301A /* MySwift4Package.framework */; };
 		3570B6CB1F8A6B7400A87877 /* MySwift3Package.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570B6C91F8A69C400A87877 /* MySwift3Package.framework */; };
+		35CC278D1F8ABF81001C8B4F /* i3s_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD5A071F8A77AA0032D857 /* i3s_swift.framework */; };
+		35CC278E1F8ABFB8001C8B4F /* i3s.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD5A091F8A77AA0032D857 /* i3s.framework */; };
+		35E0E24C1F8AC81E00025B39 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0343382D1F45CCD200782A2F /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,20 @@
 			remoteGlobalIDString = "MySwift3Package::MySwift3Package::Product";
 			remoteInfo = MySwift3Package;
 		};
+		35BD5A061F8A77AA0032D857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0347D9E61F45C9EA0004D700 /* Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "i3s::i3s-swift::Product";
+			remoteInfo = "i3s-swift";
+		};
+		35BD5A081F8A77AA0032D857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0347D9E61F45C9EA0004D700 /* Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "i3s::i3s::Product";
+			remoteInfo = i3s;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -88,10 +104,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E0E24C1F8AC81E00025B39 /* RxCocoa.framework in Frameworks */,
+				35CC278E1F8ABFB8001C8B4F /* i3s.framework in Frameworks */,
+				35CC278D1F8ABF81001C8B4F /* i3s_swift.framework in Frameworks */,
 				354BAD5B1F8A72BB003A301A /* MySwift4Package.framework in Frameworks */,
 				3570B6CB1F8A6B7400A87877 /* MySwift3Package.framework in Frameworks */,
 				034338341F45CCD200782A2F /* RxBlocking.framework in Frameworks */,
-				034338351F45CCD200782A2F /* RxCocoa.framework in Frameworks */,
 				034338361F45CCD200782A2F /* RxCocoaRuntime.framework in Frameworks */,
 				034338371F45CCD200782A2F /* RxSwift.framework in Frameworks */,
 			);
@@ -135,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				0347D9EC1F45C9EA0004D700 /* Dependencies.framework */,
+				35BD5A071F8A77AA0032D857 /* i3s_swift.framework */,
+				35BD5A091F8A77AA0032D857 /* i3s.framework */,
 				354BAD5A1F8A72BB003A301A /* MySwift4Package.framework */,
 				3570B6C91F8A69C400A87877 /* MySwift3Package.framework */,
 				0343382D1F45CCD200782A2F /* RxCocoa.framework */,
@@ -259,6 +279,20 @@
 			fileType = wrapper.framework;
 			path = MySwift3Package.framework;
 			remoteRef = 3570B6C81F8A69C400A87877 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35BD5A071F8A77AA0032D857 /* i3s_swift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = i3s_swift.framework;
+			remoteRef = 35BD5A061F8A77AA0032D857 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35BD5A091F8A77AA0032D857 /* i3s.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = i3s.framework;
+			remoteRef = 35BD5A081F8A77AA0032D857 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -422,6 +456,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftPackagesWithiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.music-group.innouk.SwiftPackagesWithiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -436,6 +471,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftPackagesWithiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.music-group.innouk.SwiftPackagesWithiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
