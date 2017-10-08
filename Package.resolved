@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "MySwift4Package",
+        "repositoryURL": "https://github.com/itsravenous/MySwift4Package.git",
+        "state": {
+          "branch": null,
+          "revision": "f82c932583b81d1c793142213cd64d035c1dbc5a",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "RxSwift",
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {

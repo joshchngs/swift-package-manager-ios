@@ -16,6 +16,7 @@
 		034338351F45CCD200782A2F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0343382D1F45CCD200782A2F /* RxCocoa.framework */; };
 		034338361F45CCD200782A2F /* RxCocoaRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034338311F45CCD200782A2F /* RxCocoaRuntime.framework */; };
 		034338371F45CCD200782A2F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034338331F45CCD200782A2F /* RxSwift.framework */; };
+		354BAD5B1F8A72BB003A301A /* MySwift4Package.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354BAD5A1F8A72BB003A301A /* MySwift4Package.framework */; };
 		3570B6CB1F8A6B7400A87877 /* MySwift3Package.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570B6C91F8A69C400A87877 /* MySwift3Package.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,13 @@
 			remoteGlobalIDString = "Dependencies::Dependencies::Product";
 			remoteInfo = Dependencies;
 		};
+		354BAD591F8A72BB003A301A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0347D9E61F45C9EA0004D700 /* Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "MySwift4Package::MySwift4Package::Product";
+			remoteInfo = MySwift4Package;
+		};
 		3570B6C81F8A69C400A87877 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0347D9E61F45C9EA0004D700 /* Dependencies.xcodeproj */;
@@ -80,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354BAD5B1F8A72BB003A301A /* MySwift4Package.framework in Frameworks */,
 				3570B6CB1F8A6B7400A87877 /* MySwift3Package.framework in Frameworks */,
 				034338341F45CCD200782A2F /* RxBlocking.framework in Frameworks */,
 				034338351F45CCD200782A2F /* RxCocoa.framework in Frameworks */,
@@ -126,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0347D9EC1F45C9EA0004D700 /* Dependencies.framework */,
+				354BAD5A1F8A72BB003A301A /* MySwift4Package.framework */,
 				3570B6C91F8A69C400A87877 /* MySwift3Package.framework */,
 				0343382D1F45CCD200782A2F /* RxCocoa.framework */,
 				0343382F1F45CCD200782A2F /* RxBlocking.framework */,
@@ -235,6 +245,13 @@
 			fileType = wrapper.framework;
 			path = Dependencies.framework;
 			remoteRef = 0347D9EB1F45C9EA0004D700 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		354BAD5A1F8A72BB003A301A /* MySwift4Package.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MySwift4Package.framework;
+			remoteRef = 354BAD591F8A72BB003A301A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3570B6C91F8A69C400A87877 /* MySwift3Package.framework */ = {
