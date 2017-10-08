@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print(SomeStruct.self)
+        print(SomeOtherStruct.self)
         slider.rx.value
             .bind(to: progressView.rx.progress)
             .disposed(by: bag)
