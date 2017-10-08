@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "MySwift3Package",
+        "repositoryURL": "https://github.com/itsravenous/MySwift3Package.git",
+        "state": {
+          "branch": null,
+          "revision": "50b06932901e02a7e66cdfe4ab2dc4ff9e87d505",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "RxSwift",
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
