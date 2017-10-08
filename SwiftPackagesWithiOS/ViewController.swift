@@ -11,6 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import MySwift3Package
+import MySwift4Package
 
 class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
