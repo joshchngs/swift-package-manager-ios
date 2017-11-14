@@ -2,6 +2,7 @@
 
 require 'xcodeproj'
 
+system "swift package update"
 system "swift package generate-xcodeproj"
 
 project = Xcodeproj::Project.open('Dependencies.xcodeproj')
