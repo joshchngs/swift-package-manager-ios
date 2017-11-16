@@ -16,7 +16,7 @@ This will build a simple app that depends on [RxSwift](https://github.com/Reacti
 
 The end result will be a standard iOS application, with Static Frameworks for each of its dependencies embedded within the bundle.
 
-You can link the dependencies dynamically if you prefer, by removing the `config.build_settings['MACH_O_TYPE'] = 'staticlib'` line in `generate-project-dependencies.rb`. If you do this **you will need to add the `Dependencies` framework to your main target**.
+You can link the dependencies dynamically if you prefer, by removing the `config.build_settings['MACH_O_TYPE'] = 'staticlib'` line in `generate-project-dependencies.rb`. If you do this **you will need to [embed the dependencies in your main app target](https://developer.apple.com/library/content/technotes/tn2435/_index.html#//apple_ref/doc/uid/DTS40017543-CH1-EMBED_IN_APP_SECTION)**.
 
 You can step through the commits to see what steps were taken, with a brief overview of the process below.
 
@@ -33,4 +33,3 @@ _(This process hasn't been tested with Xcode 8.3 & Swift 3.1)_
 7. Link our App with the new Rx*.frameworks
 8. Write some sample code to verify that the import works
 9. Override MODULEMAP_FILE setting for non-Swift modules
-
