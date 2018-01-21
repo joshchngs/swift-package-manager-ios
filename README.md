@@ -6,11 +6,13 @@ This project demonstrates a working method for using [Swift Package Manager](htt
 
 ### To get started:
 
-1. **Run `ruby generate-project-dependencies.rb` in the project root directory**. This will pull down dependencies as defined in `Package.swift` and then generate and modify a _Dependencies_ project which is then included as a sub-project by the example project.
+1. Install the `xcodeproj` ruby library: `sudo gem install xcodeproj`
 
-2. **Open `SwiftPackagesWithiOS.xcodeproj` in Xcode**
+2. **Run `ruby generate-project-dependencies.rb` in the project root directory**. This will pull down dependencies as defined in `Package.swift` and then generate and modify a _Dependencies_ project which is then included as a sub-project by the example project.
 
-3. **Build the main target** (you may need to manually build the target for the _Dependencies_ sub-project).
+3. **Open `SwiftPackagesWithiOS.xcodeproj` in Xcode**
+
+4. **Build the main target** (you may need to manually build the target for the _Dependencies_ sub-project).
 
 This will build a simple app that depends on [RxSwift](https://github.com/ReactiveX/RxSwift). RxSwift was chosen because it shows how to handle modules generated from Objective-C.
 
