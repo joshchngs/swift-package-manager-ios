@@ -5,6 +5,7 @@ require 'xcodeproj'
 system "swift package generate-xcodeproj"
 
 project = Xcodeproj::Project.open('Dependencies.xcodeproj')
+# project.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = 12.0
 
 project.targets.each do |target|
   module_map_file = "Dependencies.xcodeproj/GeneratedModuleMap/#{target.name}/module.modulemap"
