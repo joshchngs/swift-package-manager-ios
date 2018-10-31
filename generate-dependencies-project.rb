@@ -13,7 +13,7 @@ project.targets.each do |target|
     config.build_settings['DEFINES_MODULE'] = 'YES'
     config.build_settings['SDKROOT'] = 'iphoneos'
     
-    # Remove this line to setting iOS Deployment Target
+    # Uncomment next line to setting iOS Deployment Target
     # config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = 12.0
 
     # Remove this line if you prefer to link the dependencies dynamically
