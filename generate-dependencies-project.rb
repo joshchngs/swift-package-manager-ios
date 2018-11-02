@@ -8,7 +8,7 @@ project = Xcodeproj::Project.open('Dependencies.xcodeproj')
 
 # Uncomment this to setting iOS Deployment Target
 # project.build_configurations.each do |config|
-#    print config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+#     config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
 # end
 
 project.targets.each do |target|
